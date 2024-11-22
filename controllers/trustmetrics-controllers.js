@@ -19,7 +19,7 @@ const getTrustMetrics = (_req, res) => {
     try {
         res.status(200).json(trustMetrics);
     } catch (error) {
-        console.error("Error fetching Trust Metrics:", error);
+        console.error("Error getting Trust Metrics:", error);
         res.status(500).send("Internal Server Error");
     }
 };
